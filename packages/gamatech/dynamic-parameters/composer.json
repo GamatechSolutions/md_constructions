@@ -1,0 +1,19 @@
+{
+    "name": "gamatech/dynamic-parameters",
+    "description": "Simple dynamic parameters implementation.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nikola Barac",
+            "email": "nikola.barac@gamatechsolutions.net"
+        }
+	],
+	"autoload": {
+		"classmap": [
+			"src/migrations",
+			"src/Models",
+			"src/Traits"
+		]
+	},
+    "require": {}
+}

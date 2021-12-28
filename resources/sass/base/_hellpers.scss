@@ -1,0 +1,50 @@
+.cs-bg-primary{
+	background-color: $color-primary !important;
+}
+.cs-color-primary{
+	color: $color-primary !important;
+}
+
+.cs-btn-primary{
+	background-color: $color-primary;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding: 8px 20px;
+	border-radius: 5px;
+	&:hover{
+		color: #fff;
+		background-color: darken($color-primary, 10%);
+	}
+}
+.cs-btn-secondary{
+	background-color: #6c757d;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding: 8px 20px;
+	border-radius: 5px;
+	&:hover{
+		color: #fff;
+		background-color: darken(#6c757d, 10%);
+	}
+}
+
+.card.cs-card-primary{
+	.card-header{
+		background-color: $color-primary !important;
+		.card-title{
+			color: #fff !important;
+			font-size: 18px !important;
+		}
+	}
+}
+
+
+.cs-button-group{
+	width: 100%;
+	display: flex;
+	a:first-child , button:first-child{
+		margin-right: 32px !important;
+	}
+}

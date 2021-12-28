@@ -1,0 +1,40 @@
+.cs-modal-container-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(#000, .6);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.cs-modal{
+		width: 80%;
+		max-width: 600px;
+		background-color: #fff;
+		padding: 32px 24px;
+		border-radius: 8px;
+		box-shadow: 8px 4px 12px rgba(#111, .8);
+		*{
+			color: $color-text;
+		}
+		.close{
+			&:focus{
+				outline: none;
+				border: none;
+			}
+		}
+		.actions{
+			position: relative;
+			display: flex;
+			flex-direction: row-reverse;
+			width: 100%;
+			justify-content: space-between;
+			margin-top: 32px;
+			button{
+				width: 40%;
+				color:#fff;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+@mixin tablet {
+	@media (max-width: #{$tablet-width - 1px}) {
+	  @content;
+	}
+  }
+  
+  @mixin phone {
+	@media (max-width: #{$phone-width - 1px}) {
+	  @content;
+	}
+  }
+
+  @mixin on-event($self: false) {
+	@if $self {
+	  &,
+	  &:hover,
+	  &:active,
+	  &:focus {
+		@content;
+	  }
+	} @else {
+	  &:hover,
+	  &:active,
+	  &:focus {
+		@content;
+	  }
+	}
+}
+
+@mixin underline($w : 100%, $h:1px, $m:0, $color : $color-primary){
+	&:after{
+		content: "";
+		display: block;
+		width: $w;
+		height: $h;
+		background-color: $color;
+		margin:$m 0;
+	}
+}
