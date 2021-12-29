@@ -14,9 +14,9 @@ class UserSeeder extends Seeder
     {
 		$users = [
 			'admin'			=> User::create([
-				'name'		=> 'Administrator',
-				'email'		=> 'admin@zavarivackg',
-				'password'	=> \Hash::make('zavarivackgfakture123')
+				'name'		=> 'admin',
+				'email'		=> 'office@mdconstructions.rs',
+				'password'	=> \Hash::make('mladen123')
 			])
 		];
 
