@@ -90,7 +90,7 @@
 			padding-top: 12px;
 			padding-bottom: 12px;
 			text-align: left;
-			background-color: #a16e00;
+			background-color: #58b3cc;
 			color: white;
 			text-align: left;
 		}
@@ -182,7 +182,7 @@
 			border: 1px solid #ced4da;
 			padding: 10px 0;
 			height: 300px;
-			border-top: 2px solid #a16e00;
+			border-top: 2px solid #58b3cc;
 		}
 
 		.transaction-info .card-name {
@@ -258,7 +258,7 @@
 		}
 
 		.final-price {
-			background-color: #a16e00;
+			background-color: #58b3cc;
 		}
 
 		.final-count ul .final-price table tr td {

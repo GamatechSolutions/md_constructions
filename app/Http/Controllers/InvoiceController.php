@@ -24,18 +24,18 @@ class InvoiceController extends Controller
 		$this->middleware('role:Administrator,Računovođa');
 
 		$this->invoice_issuer = (object) [
-			'name'				=> 'ZAVARIVAČ KG',
+			'name'				=> 'MD Constructions & Crafts',
 			'state'				=> 'Srbija',
 			'city'				=> 'Kragujevac',
-			'address'			=> 'Desimirovac BB. 34000 Kragujevac',
+			'address'			=> 'Lazara Đokića 25, 34000 Kragujevac			',
 			'email'				=> 'office@zavarivackg.rs',
-			'phone'				=> '+38134255177',
-			'website'			=> 'www.zavarivackg.rs',
-			'pib'				=> '110126501',
-			'firm_id'			=> '64669095',
+			'phone'				=> '064/307-5265',
+			'website'			=> 'www.mdconstructions.rs',
+			'pib'				=> '112795263',
+			'firm_id'			=> '66360202',
 			'activity_code'		=> '0000',
-			'account_number'	=> '155-0000000057779-12',
-			'IBAN'				=> '155-1000000093275-74',
+			'account_number'	=> '265361031000113502',
+			'IBAN'				=> '265361031000113502',
 		];
 
 		$this->action_map = (object) [];
