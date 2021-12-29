@@ -1,18 +1,9 @@
-$color-palette: (
-	'primary': 	#a16e00, 
-	'border': 	#ced4da, 
-	'text': 	#343a40, 
-	'disabled': #6c757d, 
-	'danger': 	#e3342f, 
-	'success': 	#38c172, 
-);
-
+$color-palette: ( 'primary' : #58B3CC, 'border' : #ced4da, 'text' : #343a40, 'disabled': #6c757d, 'danger' : #e3342f, 'success' : #38c172, );
 $color-primary: get-color('primary');
 $color-border: get-color('border');
 $color-text: get-color('text');
 $color-disabled: get-color('disabled');
 $color-danger: get-color('danger');
 $color-success: get-color('success');
-
 $tablet-width:1024px;
-$phone-width:768px; 
+$phone-width:768px;

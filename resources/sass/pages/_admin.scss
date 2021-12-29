@@ -1,528 +1,524 @@
-.cs-status-completed{
-	color: $color-success;
-}
-.cs-status-canceled{
-	color:$color-danger;
-}
-.cs-status-active{
-	color:$color-primary;
+.cs-status-completed {
+    color: $color-success;
 }
 
-
-.wrapper .content{
-	@include tablet{
-		padding: 0  !important;
-	}
+.cs-status-canceled {
+    color: $color-danger;
 }
+
+.cs-status-active {
+    color: $color-primary;
+}
+
+.wrapper .content {
+    @include tablet {
+        padding: 0 !important;
+    }
+}
+
 .user-panel img {
     width: 3.1rem !important;
 }
-.cs-callout{
-	border-left-color: $color-primary !important; 
+
+.cs-callout {
+    border-left-color: $color-primary !important;
 }
 
 .validation-error {
-	border: 1px solid $color-danger !important;
-	box-shadow: 0 0 4px rgba($color-danger, .8),
-	 			0 0 8px rgba($color-danger, .5) !important;
+    border: 1px solid $color-danger !important;
+    box-shadow: 0 0 4px rgba($color-danger, .8), 0 0 8px rgba($color-danger, .5) !important;
 }
 
-.invoice-final-count{
-	textarea{
-		min-height: 150px;
-	}
-	.form-control{
-		max-width: 80%;
-	}
-}
-.invoice-note{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	.invoice-note-item{
-		display: flex;
-		flex-direction: column;
-		max-width: 90%;
-		&:first-child{
-			font-size: 18px;
-		}
-	}
+.invoice-final-count {
+    textarea {
+        min-height: 150px;
+    }
+    .form-control {
+        max-width: 80%;
+    }
 }
 
-.invoice-final .final-count{
-	padding-left: 15%;
-	.deadline{
-		width: fit-content;
-		padding: 4px 4px;
-	}
-	ul{
-		list-style-type: none;
-		padding: 0;
-		hr{
-			margin: 0;
-		}
-		li{
-			padding: 4px 4px;
-			font-size: 18px;
-			display: flex;
-			justify-content: space-between;
-			span{
-				&:last-child{
-					font-weight: bold;
-				}
-			}
-			&.highlight-price{
-				margin-top: 8px;
-				background-color: $color-primary;
-				color: white;
-				font-size: 20px;
-				font-weight: bold;
-			}
-		}
-	}
+.invoice-note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .invoice-note-item {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        &:first-child {
+            font-size: 18px;
+        }
+    }
 }
 
-.error-message{
-	width: 100%;
-	color: $color-danger;
-	font-size: 12px;
+.invoice-final .final-count {
+    padding-left: 15%;
+    .deadline {
+        width: fit-content;
+        padding: 4px 4px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        hr {
+            margin: 0;
+        }
+        li {
+            padding: 4px 4px;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            span {
+                &:last-child {
+                    font-weight: bold;
+                }
+            }
+            &.highlight-price {
+                margin-top: 8px;
+                background-color: $color-primary;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
-.invoice-final{
-	margin-top: 32px;
+.error-message {
+    width: 100%;
+    color: $color-danger;
+    font-size: 12px;
 }
 
-.cs-invoice-inputs{
-	position: relative;
-	width: 100%;
-	height: 70vh;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	.form-group{
-		width: 46%;
-		height: 12%;
-		margin: 0;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		label{
-			font-size: 16px;
-			width: 40%;
-			justify-content: flex-start;
-		}
-		.input-wrapper{
-			width: 60%;
-			input,select{
-				width: 100%;
-			}
-			.error-message{
-				width: 100%;
-				color: $color-danger;
-				font-size: 12px;
-			}
-			input[type='checkbox']{
-				width: 25px;
-				outline: none;
-				box-shadow: none;
-				@include on-event{
-					outline: none;
-					box-shadow: none;
-				}
-			}
-		}	
-	}
+.invoice-final {
+    margin-top: 32px;
 }
 
-.cs-error-message{
-	color:$red;
-	font-size: 12px;
+.cs-invoice-inputs {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .form-group {
+        width: 46%;
+        height: 12%;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        label {
+            font-size: 16px;
+            width: 40%;
+            justify-content: flex-start;
+        }
+        .input-wrapper {
+            width: 60%;
+            input,
+            select {
+                width: 100%;
+            }
+            .error-message {
+                width: 100%;
+                color: $color-danger;
+                font-size: 12px;
+            }
+            input[type='checkbox'] {
+                width: 25px;
+                outline: none;
+                box-shadow: none;
+                @include on-event {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
 }
 
-.cs-input-error{
-	border-bottom: 3px solid $red !important;
+.cs-error-message {
+    color: $red;
+    font-size: 12px;
 }
 
-.cs-form-group-img{
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	width: 100%;
-	label{
-		height: 15%;
-	}
-	img{
-		width: 100%;
-		height: auto;
-		object-fit: contain
-	}
-	button{
-		height: 20%;
-	}
+.cs-input-error {
+    border-bottom: 3px solid $red !important;
 }
 
-.cs-popup-window{
-	position: fixed;
+.cs-form-group-img {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    label {
+        height: 15%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: contain
+    }
+    button {
+        height: 20%;
+    }
+}
+
+.cs-popup-window {
+    position: fixed;
     z-index: 2000;
     width: 100vw;
-	height: 100vh;
+    height: 100vh;
     display: none;
     top: 0;
-	left: 0; 
-	.action-section{
-		position: absolute;
-		width: 90%;
-		max-width: 500px;
-		min-height: 300px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		background-color: rgba(#000, .95);
-		border:2px solid $color-primary;
-		padding: 2% 5%;
-		h2{
-			font-weight: 600;
-			@include underline(100%, 3px ,6px)
-		}
-		h2,p{
-			color:#fff;
-		}
-		input{
-			margin-top: 32px;
-			background-color: lighten(#000, 5%);
-			width: 100%;
-			padding: 4px 6px;
-			color: #fff;
-			font-size: 20px;
-			box-shadow: none;
-			outline: none;
-			border: 2px solid #fff;
-			@include on-event(){
-				outline: none;
-				border: 2px solid $color-primary;
-				color: $color-primary;
-			}
-		}
-		.cs-button-group{
-			position: relative;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			margin-top: 32px;
-		}
-	}
+    left: 0;
+    .action-section {
+        position: absolute;
+        width: 90%;
+        max-width: 500px;
+        min-height: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(#000, .95);
+        border: 2px solid $color-primary;
+        padding: 2% 5%;
+        h2 {
+            font-weight: 600;
+            @include underline(100%, 3px, 6px)
+        }
+        h2,
+        p {
+            color: #fff;
+        }
+        input {
+            margin-top: 32px;
+            background-color: lighten(#000, 5%);
+            width: 100%;
+            padding: 4px 6px;
+            color: #fff;
+            font-size: 20px;
+            box-shadow: none;
+            outline: none;
+            border: 2px solid #fff;
+            @include on-event() {
+                outline: none;
+                border: 2px solid $color-primary;
+                color: $color-primary;
+            }
+        }
+        .cs-button-group {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 32px;
+        }
+    }
 }
 
-.status-action-modal .action-section.complete{
-	max-width: 700px;
-	min-height: 400px;
-	h4{
-		color: #000;
-		font-size: 16px;
-		font-weight: 600;
-		margin-bottom: 8px;
-	}
-	.progress{
-		height: 46px;
-	}
-	#status-action-files{
-		.delete-file{
-			&:hover{
-				cursor: pointer;
-				transform: scale(1.1);
-			}
-		}
-	}
-
+.status-action-modal .action-section.complete {
+    max-width: 700px;
+    min-height: 400px;
+    h4 {
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    .progress {
+        height: 46px;
+    }
+    #status-action-files {
+        .delete-file {
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
 }
 
-.cs-badge{
-	font-size: 24px !important;
+.cs-badge {
+    font-size: 24px !important;
 }
 
-.cs-login-screen{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
-	height: 100vh;
-	background-color: azure;
-	.cs-logo{
-		padding-bottom: 32px;
-		max-width: 400px;
-	}
-	.cs-login-form{
-		width: 80%;
-		max-width: 600px;
-	}
+.cs-login-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250, 255, 255);
+    .cs-logo {
+        padding-bottom: 32px;
+        max-width: 180px;
+    }
+    .cs-login-form {
+        width: 80%;
+        max-width: 600px;
+    }
 }
 
-#delete-product-form{
-	button{
-		background-color: transparent;
-		color: $red;
-	}
+#delete-product-form {
+    button {
+        background-color: transparent;
+        color: $red;
+    }
 }
 
-#delete-user-form{
-	button{
-		background-color: $red;
-		float: right;
-	}
+#delete-user-form {
+    button {
+        background-color: $red;
+        float: right;
+    }
 }
+
 // PRODUCT TABLE
-
-.cs-product-table{
-	position: relative;
-	border-collapse: collapse;
-	.cs-product-table-heading{
-		width: 100%;
-		height: fit-content;
-		display: flex;
-		span{
-			width: 8%;
-			display: flex;
-			align-items: center;
-			text-align: left;
-			font-weight: bold;
-			font-size: 12px;
-			border: 1px solid $color-border;
-			padding: 5px;
-			&:nth-child(1){
-				width: 10%;
-			}
-			&:nth-child(2){
-				width: 30%;
-			}
-		
-		}
-	}
-	.cs-delete-icon{
-		&:hover{
-			cursor: pointer;
-		}
-	}
-	.cs-product-table-body{
-		border: 1px solid $color-border;
-		border-top: none;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		border-collapse: collapse;
-		.cs-product-table-row{
-			display: flex;
-			width: 100%;
-			border-bottom: 1px solid $color-border;
-			border-top: 1px solid $color-border;
-			border-collapse: collapse;
-			span{	
-				width: 8%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
-				padding: 0;
-				&:nth-child(2){
-					width: 10%;
-				}
-				&:nth-child(3){
-					width: 30%;
-				}
-				input,select{
-					background-color: inherit;
-					width: 100%;
-					height: 100%;
-					padding: 10px 5px;
-					border: none;
-					transition: all .3;
-				}
-
-				input:hover:not(:disabled){
-					
-					background-color: $color-primary;
-					color: #fff;
-				}
-
-				input:disabled{
-					user-select: none;
-				}
-
-			/* 	&:hover{
+.cs-product-table {
+    position: relative;
+    border-collapse: collapse;
+    .cs-product-table-heading {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        span {
+            width: 8%;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            font-weight: bold;
+            font-size: 12px;
+            border: 1px solid $color-border;
+            padding: 5px;
+            &:nth-child(1) {
+                width: 10%;
+            }
+            &:nth-child(2) {
+                width: 30%;
+            }
+        }
+    }
+    .cs-delete-icon {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .cs-product-table-body {
+        border: 1px solid $color-border;
+        border-top: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-collapse: collapse;
+        .cs-product-table-row {
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid $color-border;
+            border-top: 1px solid $color-border;
+            border-collapse: collapse;
+            span {
+                width: 8%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 0;
+                &:nth-child(2) {
+                    width: 10%;
+                }
+                &:nth-child(3) {
+                    width: 30%;
+                }
+                input,
+                select {
+                    background-color: inherit;
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px 5px;
+                    border: none;
+                    transition: all .3;
+                }
+                input:hover:not(:disabled) {
+                    background-color: $color-primary;
+                    color: #fff;
+                }
+                input:disabled {
+                    user-select: none;
+                }
+                /* 	&:hover{
 					
 						background-color: lighten($color-primary, $amount: 60%);
 					
 				} */
-			}
-		}
-	}
+            }
+        }
+    }
 }
 
-
-.modal.cs-invoice-modal{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-color: rgba($color: #000000, $alpha: .4) ;
-
-	.modal-dialog{
-		min-width: 80%;
-	}
+.modal.cs-invoice-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .4);
+    .modal-dialog {
+        min-width: 80%;
+    }
 }
 
-.cs-print-table{
-	position: relative;
-	width: 100%;
-	th{
-		width:7%;
-		text-align: center;
-		vertical-align: middle;
-	}
-	td{
-		width:7%;
-	}
-	th,td{
-		&:nth-of-type(1){
-			width: 3%;
-		}
-		&:nth-of-type(2){
-			width: 30%;
-		}
-		&:nth-of-type(5){
-			width: 10%;
-		}
-		&:nth-of-type(7){
-			width: 10%;
-		}
-	}
+.cs-print-table {
+    position: relative;
+    width: 100%;
+    th {
+        width: 7%;
+        text-align: center;
+        vertical-align: middle;
+    }
+    td {
+        width: 7%;
+    }
+    th,
+    td {
+        &:nth-of-type(1) {
+            width: 3%;
+        }
+        &:nth-of-type(2) {
+            width: 30%;
+        }
+        &:nth-of-type(5) {
+            width: 10%;
+        }
+        &:nth-of-type(7) {
+            width: 10%;
+        }
+    }
 }
 
-.cs-overlay-loader{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(#000, .7);
-	z-index: 1100;
-	.cs-spinner{
-		color:$color-primary;
-	}
-	span{
-		padding-top: 16px;
-		color: #aaa;
-		font-size: 18px;
-	}
+.cs-overlay-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(#000, .7);
+    z-index: 1100;
+    .cs-spinner {
+        color: $color-primary;
+    }
+    span {
+        padding-top: 16px;
+        color: #aaa;
+        font-size: 18px;
+    }
 }
 
-.cs-note-textarea{
-	textarea{
-		width: 80%;
-		min-height: 200px;
-	}
+.cs-note-textarea {
+    textarea {
+        width: 80%;
+        min-height: 200px;
+    }
 }
-
-
-
-
 
 // INVOICE VIEW
-
-.invoice .header{
-	display: flex;
-	justify-content: space-between;
-	.about-company{
-		width: 100%;
-		.logo{
-			width: 100%;
-			margin-bottom: 16px;
-			img{
-				width: 50%;
-				height: auto;
-			}
-		}
-		.info{
-			display: flex;
-			.name{
-				font-size: 20px;
-			}
-			span{
-				display: flex;
-			}
-			i{
-				width: 32px;
-				color: $color-primary;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-		}
-	}
-	.invoice-date{
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		h3{
-			padding-bottom: 8px;
-			border-bottom: 1px solid $color-border;
-		}
-		div{
-			display: flex;
-			flex-direction: column;
-		}
-	}
-}
-.invoice .invoice-info{
-	margin-bottom: 32px;
-	.client,.sender{
-		.card-danger.card-outline {
-			border-top: 3px solid $color-primary;
-		}
-		.card-body{
-			display: flex;
-			flex-direction: column;
-		}
-	}
-}
-.invoice-controls{
-	.action-buttons{
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: flex-start;
-		button{
-			&:first-child {
-				margin-left: 15px;
-			}
-		}
-	
-	}
+.invoice .header {
+    display: flex;
+    justify-content: space-between;
+    .about-company {
+        width: 100%;
+        .logo {
+            width: 100%;
+            margin-bottom: 16px;
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
+        .info {
+            display: flex;
+            .name {
+                font-size: 20px;
+            }
+            span {
+                display: flex;
+            }
+            i {
+                width: 32px;
+                color: $color-primary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .invoice-date {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        h3 {
+            padding-bottom: 8px;
+            border-bottom: 1px solid $color-border;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
-.invoice-footer{
-	font-size: 14px;
+.invoice .invoice-info {
+    margin-bottom: 32px;
+    .client,
+    .sender {
+        .card-danger.card-outline {
+            border-top: 3px solid $color-primary;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
-.cs-invoice-modal.cs-invoice-view-modal{
-	padding-right: 0 !important;
-	max-width: 100vw;
+.invoice-controls {
+    .action-buttons {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        button {
+            &:first-child {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.invoice-footer {
+    font-size: 14px;
+}
+
+.cs-invoice-modal.cs-invoice-view-modal {
+    padding-right: 0 !important;
+    max-width: 100vw;
     max-height: 100vh;
     overflow: hidden;
-	.modal-dialog{
-		width: 100%;
-		height: 100%;
-	}
+    .modal-dialog {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.cs-invoice-modal.cs-invoice-view-modal .modal-content{
-	position: absolute;
-	top:50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 600px;
+.cs-invoice-modal.cs-invoice-view-modal .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
 }
