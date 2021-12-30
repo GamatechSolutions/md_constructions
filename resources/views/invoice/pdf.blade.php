@@ -47,7 +47,7 @@
 		}
 
 		.pdf-top .logo img {
-			width: 150px;
+			width: 80px;
 			height: auto;
 		}
 
@@ -284,7 +284,7 @@
 		<table class="pdf-top">
 			<tr>
 				<td class="logo">
-					<img src="{{ asset('assets/images/logo1.png') }}" width="360" alt="">
+					<img src="{{ asset('assets/images/logo1.png') }}" width="120" alt="">
 				</td>
 				<td class="date">
 					<h3>@lang("alias.invoice_type.{$invoice->type}") broj: {{ $fields->unique_number ?? '' }}</h3>
