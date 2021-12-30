@@ -28,7 +28,7 @@ class InvoiceController extends Controller
 			'state'				=> 'Srbija',
 			'city'				=> 'Kragujevac',
 			'address'			=> 'Lazara Đokića 25, 34000 Kragujevac			',
-			'email'				=> 'office@zavarivackg.rs',
+			'email'				=> 'office@mdconstructions.rs',
 			'phone'				=> '064/307-5265',
 			'website'			=> 'www.mdconstructions.rs',
 			'pib'				=> '112795263',

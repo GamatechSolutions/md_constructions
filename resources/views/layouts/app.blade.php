@@ -8,7 +8,7 @@
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
-	<title>ZavarivacKG</title>
+	<title>MD constructions</title>
 
 	<link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon"/>
 

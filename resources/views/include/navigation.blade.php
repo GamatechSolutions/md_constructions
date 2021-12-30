@@ -16,7 +16,7 @@
           <img src="{{ asset('assets/logoSmall1.png') }}" alt="User Image">
         </div>
         <div class="info">
-          <h2 class="d-block text-light">Zavarivac<span class="cs-color-primary">KG</span></h2>
+          <h2 class="d-block text-light">MD<span class="cs-color-primary">constructions</span></h2>
         </div>
       </div>
 
