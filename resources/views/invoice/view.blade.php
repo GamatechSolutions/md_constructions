@@ -73,14 +73,14 @@
 							<div class="col-sm-6 invoice-col sender">
 								<div class="card card-outline card-danger">
 									<div class="card-header">
-										<h3 class="card-title">Faktura od:</h3>
+										<h3 class="card-title">Od:</h3>
 									</div>
 									<div class="card-body">
 										<h4> <strong> {{$invoice_issuer->name }}</strong></h4>
 										<span> <strong> PIB:</strong> {{$invoice_issuer->pib}}</span>
 										<span> <strong> Matični br.:</strong> {{$invoice_issuer->firm_id}}</span>
 										<span> <strong> Račun:</strong> {{$invoice_issuer->account_number}}</span>
-										<span> <strong> IBAN:</strong> {{$invoice_issuer->IBAN}}</span>
+										{{-- <span> <strong> IBAN:</strong> {{$invoice_issuer->IBAN}}</span> --}}
 									</div>
 								</div>
 							</div>
@@ -88,7 +88,7 @@
 							<div class="col-sm-6 invoice-col client ">
 								<div class="card card-outline card-danger">
 									<div class="card-header">
-										<h3 class="card-title">Faktura za:</h3>
+										<h3 class="card-title">Za:</h3>
 									</div>
 									<div class="card-body">
 										<h4> <strong>

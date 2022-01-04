@@ -6,6 +6,9 @@
 	<title>Invoice PDF</title>
 
 	<style type="text/css" media="all">
+	*{
+		font-family:Verdana, Geneva, Tahoma, sans-serif;
+	}
 		table {
 			margin: 0 initial;
 			position: relative;
@@ -164,6 +167,20 @@
 		.text-muted {
 			color: #1f1f20;
 		}
+		.cs-stamp{
+			position:relative;
+			margin-top: 100px;
+			width: 200px;
+		}
+		.cs-stamp div{
+			width: 100%;
+			border-bottom: 1px solid #000;
+		}
+		.cs-stamp p{
+			margin-top: 6px;
+			font-size: 12px;
+			color:#1f1f20;
+		}
 
 		.contact-info {
 			margin-top: 10px;
@@ -186,13 +203,14 @@
 		}
 
 		.transaction-info .card-name {
-			font-size: 28px;
+			font-size: 18px;
 			font-weight: 500;
 			padding: 4px 5px;
+			font-weight: bold;
 		}
 
 		.transaction-info .card-header {
-			font-size: 22px;
+			font-size: 20px;
 			font-weight: 400;
 			padding: 4px 5px;
 			border-bottom: 1px solid #ced4da;
@@ -201,7 +219,7 @@
 		.sender-table,
 		.receiver-table {
 			width: 310px;
-			padding: 5px 10px;
+			padding: 4px 5px;
 		}
 
 		.t-table td {
@@ -348,7 +366,7 @@
 					Za:
 				</div>
 				<div class="card-name">
-					{{ $fields->firm_name ?? $fields->individual_name }}
+					{{ $fields->firm_name ?? $fields->individual_name ?? 'nije navedeno' }}
 				</div>
 				<table class="t-table receiver-table">
 					<tr>
@@ -356,17 +374,24 @@
 						<td class="table-value">{{ $fields->street ?? ''}} | {{ $fields->city ?? ''}} | {{ $fields->state ?? ''}}</td>
 					</tr>
 					<tr>
+						@isset($fields->individual_id )
+						<td class="table-label">JMBG:</td>
+						<td class="table-value">{{$fields->individual_id ?? 'nije navedeno' }}</td>
+						@endisset
+						@isset($fields->pib )
 						<td class="table-label">PIB:</td>
-						<td class="table-value">{{ $fields->pib ?? $fields->JMBG }}</td>
+						<td class="table-value">{{$fields->pib ?? 'nije navedeno'}}</td>
+						@endisset
 					</tr>
 					<tr>
+						@isset($fields->firm_id )
 						<td class="table-label">Matični br.:</td>
 						<td class="table-value">{{ $fields->firm_id ?? '/' }}</td>
+						@endisset
 					</tr>
 				</table>
 			</div>
 		</div>
-
 		<table class="product-table">
 			<thead>
 				<tr>
@@ -516,6 +541,10 @@
 				<span class="text-muted">{{ $invoice->price_as_word ?? '' }}</span>
 			</div>
 		</div>
+	</div>
+	<div class="cs-stamp">
+		<div></div>
+		<p>Potpis i pečat</p>
 	</div>
 </body>
 
