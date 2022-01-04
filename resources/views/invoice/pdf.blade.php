@@ -319,7 +319,7 @@
 		<div class="row transaction-info">
 			<div class="col-2 card sender-card">
 				<div class="card-header">
-					Faktura od:
+					Od:
 				</div>
 				<div class="card-name">
 					{{ $invoice_issuer->name ?? ''}}
@@ -337,15 +337,15 @@
 						<td class="table-label">Račun:</td>
 						<td class="table-value">{{ $invoice_issuer->account_number ?? '' }}</td>
 					</tr>
-					<tr>
+				{{-- 	<tr>
 						<td class="table-label">IBAN:</td>
 						<td class="table-value">{{ $invoice_issuer->IBAN ?? '' }}</td>
-					</tr>
+					</tr> --}}
 				</table>
 			</div>
 			<div class="col-2 card receiver-card" style="float: right">
 				<div class="card-header">
-					Faktura za:
+					Za:
 				</div>
 				<div class="card-name">
 					{{ $fields->firm_name ?? $fields->individual_name }}
@@ -357,7 +357,7 @@
 					</tr>
 					<tr>
 						<td class="table-label">PIB:</td>
-						<td class="table-value">{{ $fields->pib ?? '' }}</td>
+						<td class="table-value">{{ $fields->pib ?? $fields->JMBG }}</td>
 					</tr>
 					<tr>
 						<td class="table-label">Matični br.:</td>

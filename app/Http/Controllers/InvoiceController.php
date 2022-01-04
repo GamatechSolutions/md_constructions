@@ -35,7 +35,7 @@ class InvoiceController extends Controller
 			'firm_id'			=> '66360202',
 			'activity_code'		=> '0000',
 			'account_number'	=> '265361031000113502',
-			'IBAN'				=> '265361031000113502',
+			'IBAN'				=> '',
 		];
 
 		$this->action_map = (object) [];
